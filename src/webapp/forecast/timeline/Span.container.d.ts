@@ -1,0 +1,25 @@
+import * as actions from '../../redux/actions';
+import * as selectors from '../../redux/selectors';
+import { TrackItem } from '../../track-item';
+import SpanComponent from './Span.component';
+declare const _default: import("react-redux").ConnectedComponent<typeof SpanComponent, Pick<{
+    accountId: string;
+    accruedAmountCurrency: import("../../..").Currency | null;
+    accruedAmountValue: number | null;
+    endsOn: string | null;
+    isSelected: boolean;
+    name: string;
+    orientation: selectors.forecast.Orientation;
+    selectTrackItem: typeof actions.forecast.selectTrackItem;
+    setCalendarDates: typeof actions.forecast.setTrackItemCalendarDates;
+    setEndsOn: typeof actions.forecast.setTrackItemEndsOn;
+    setStartsOn: typeof actions.forecast.setTrackItemStartsOn;
+    shortDescription: string;
+    startsOn: string | null;
+    timelineEndsOn: string;
+    timelineStartsOn: string;
+    trackIndex: number;
+    id: string;
+    type: import("../../track-item").TrackItemType;
+}, "type" | "id"> & TrackItem>;
+export default _default;
